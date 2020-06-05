@@ -6,8 +6,8 @@
             <th>NO</th>
             <th>NAMA IKAN</th>
             <th>KETERANGAN</th>
-            <th>KATEGORI</th>
             <th>HARGA</th>
+            <th>KATEGORI</th>
             <th>STOK</th>
             <th colspan="3">AKSI</th>
         </tr>
