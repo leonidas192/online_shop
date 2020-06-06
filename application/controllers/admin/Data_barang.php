@@ -52,7 +52,8 @@ public function edit($id)
     $data['barang'] = $this->Model_barang->edit_barang($where,'tabel_barang')->result();
     $this->load->view('template_admin/header');
     $this->load->view('template_admin/sidebar');
-    $this->load->view('admin/edit_barang',$data);        $this->load->view('template_admin/footer');  
+    $this->load->view('admin/edit_barang',$data);        
+    $this->load->view('template_admin/footer');  
 }
 public function update()
 {
