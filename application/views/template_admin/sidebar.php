@@ -19,7 +19,7 @@
 
       <!-- Nav Item - Dashboard -->
       <li class="nav-item active">
-        <a class="nav-link" href="<?php echo base_url('admin/dashboard_admin')?>">
+        <a class="nav-link" href="<?php echo base_url('admin/Dashboard_admin')?>">
         <i class="fas fa-home"></i>
           <span>HOME</span></a>
       </li>
@@ -30,7 +30,7 @@
       
       <!-- Nav Item - Tables -->
       <li class="nav-item">
-        <a class="nav-link" href="<?php echo base_url('admin/data_barang')?>">
+        <a class="nav-link" href="<?php echo base_url('admin/Data_barang')?>">
           <i class="fas fa-fw fa-database"></i>
           <span>DATA BARANG</span></a>
       </li>
