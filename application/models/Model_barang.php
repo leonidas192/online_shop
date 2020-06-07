@@ -25,6 +25,17 @@ public function hapus_barang($where,$table)
       $this->db->where($where);
       $this->db->delete($table);
 }
+public function find($id)
+{
+      $result = $this->db->where('id',$id)
+                         ->limit(1)
+                         ->get('tabel_barang');
+      if($result->num_rows() > 0){
+            return $result->row();
+      }else{
+            return array();
+      }
+}
                                                     
 }
                         

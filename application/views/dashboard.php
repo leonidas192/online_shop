@@ -32,8 +32,8 @@
             <h4 class="card-title mb-1"><?php echo $i->nama_barang ?></h4>
             <h5><?php echo $i->kategori ?></h5>
             <p class="card-text"><?php echo $i->keterangan ?></p>
-            <span class="badge badge-pill badge-success mb-3">Rp.<?php echo $i->harga ?></span><br>
-            <a href="#" class="btn btn-primary">Tambah Ke Keranjang</a>
+            <span class="badge badge-pill badge-success mb-3">Rp. <?php echo number_format($i->harga,0,',','.')  ?></span><br>
+            <?php echo anchor('Dashboard/tambah_ke_keranjang/'.$i->id,'<div class="btn btn-primary">Tambah Ke Keranjang</div>') ?>
             <a href="#" class="btn btn-success">Detail</a>
         </div>
     </div>
