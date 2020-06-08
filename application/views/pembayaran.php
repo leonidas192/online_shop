@@ -39,13 +39,11 @@
                     </select>
                 </div>
                 <div class="form-group">
-                    <label>Pilih Bank</label>
+                    <label>Pilih Metode Pembayaran</label>
                     <select class="form-control">
-                        <option>BCA - XXXXXXX</option>
-                        <option>BRI - XXXXXXX</option>
-                        <option>MANDIRI - XXXXXXX</option>
-                        <option>BANK JATENG - XXXXXXX</option>
-                        <option>BNI - XXXXXXX</option>  
+                        <option>OVO</option>
+                        <option>GOPAY</option>
+                        <option>DANA</option>  
                     </select>
                 </div>
 
