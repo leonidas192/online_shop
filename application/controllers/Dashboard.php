@@ -45,11 +45,17 @@ public function pembayaran()
 }
 public function proses_pesanan()
 {
-        $this->cart->destroy();
-        $this->load->view('template/header');
-        $this->load->view('template/sidebar');
-        $this->load->view('proses_pesanan');               
-        $this->load->view('template/footer');   
+        $is_prosessed = $this->Model_invoice->index();
+        if($is_prosessed){
+                $this->cart->destroy();
+                $this->load->view('template/header');
+                $this->load->view('template/sidebar');
+                $this->load->view('proses_pesanan');               
+                $this->load->view('template/footer');   
+        }else{
+                echo "Maaf,Pesanan Anda Gagal Diproses!";
+        }
+
 }
 
         
