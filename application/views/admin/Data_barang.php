@@ -23,7 +23,7 @@
                 <td><?php echo $i->harga ?></td>
                 <td><?php echo $i->keterangan ?></td>
                 <td><?php echo $i->stock ?></td>
-                <td><div class ="btn btn-success btn-sm"><i class ="fas fa-search-plus"></i></div></td>
+                <td><?php echo anchor('admin/Data_barang/detail/'.$i->id,'<div class ="btn btn-success btn-sm"><i class ="fas fa-search-plus"></i></div>') ?></td>
                 <td><?php echo anchor('admin/Data_barang/edit/'.$i->id,'<div class ="btn btn-primary btn-sm"><i class ="fas fa-edit"></i></div>') ?></td>
                 <td><?php echo anchor('admin/Data_barang/hapus/'.$i->id,'<div class ="btn btn-danger btn-sm"><i class ="fas fa-trash"></i></div>') ?></td>
             </tr>

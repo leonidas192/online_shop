@@ -34,7 +34,8 @@
             <p class="card-text"><?php echo $i->keterangan ?></p>
             <span class="badge badge-pill badge-success mb-3">Rp. <?php echo number_format($i->harga,0,',','.')  ?></span><br>
             <?php echo anchor('Dashboard/tambah_ke_keranjang/'.$i->id,'<div class="btn btn-primary">Tambah Ke Keranjang</div>') ?>
-            <a href="#" class="btn btn-success">Detail</a>
+            <?php echo anchor('Dashboard/detail/'.$i->id,'<div class="btn btn-success">Detail</div>') ?>
+            
         </div>
     </div>
         <?php endforeach ?>

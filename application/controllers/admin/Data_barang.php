@@ -84,6 +84,14 @@ public function hapus($id)
     $this->Model_barang->hapus_barang($where,'tabel_barang');
     redirect('admin/Data_barang/index'); 
 }
+public function detail($id)
+{
+        $data['barang'] = $this->Model_barang->detail_barang($id);
+        $this->load->view('template_admin/header');
+        $this->load->view('template_admin/sidebar');
+        $this->load->view('admin/detail_barang',$data);        
+        $this->load->view('template_admin/footer');    
+}
         
 }
         

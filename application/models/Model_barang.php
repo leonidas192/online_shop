@@ -36,6 +36,15 @@ public function find($id)
             return array();
       }
 }
+public function detail_barang($id)
+{
+      $result = $this->db->where('id',$id)->get('tabel_barang');
+      if($result->num_rows() > 0){
+            return $result->result();
+      }else{
+            return false;
+      }
+}
                                                     
 }
                         

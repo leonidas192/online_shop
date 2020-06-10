@@ -57,6 +57,14 @@ public function proses_pesanan()
         }
 
 }
+public function detail($id)
+{
+        $data['barang'] = $this->Model_barang->detail_barang($id);
+        $this->load->view('template/header');
+        $this->load->view('template/sidebar');
+        $this->load->view('detail_barang',$data);               
+        $this->load->view('template/footer');  
+}
 
         
 }
