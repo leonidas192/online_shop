@@ -57,7 +57,11 @@
 
                 <div class="form-grup">
                     <label>Kategori</label>
-                    <input type="text" name="kategori" class="form-control">
+                    <select class="form-control" name="kategori">
+                      <option value="Ikan Laut">Ikan Laut</option>
+                      <option value="Ikan Tawar">Ikan Tawar</option>
+                      <option value="Ikan Hias">Ikan Hias</option>
+                    </select>
                 </div>
 
                 <div class="form-grup">

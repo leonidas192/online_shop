@@ -35,21 +35,21 @@
       
       <!-- Nav Item - Tables -->
       <li class="nav-item">
-        <a class="nav-link" href="tables.html">
+        <a class="nav-link" href="<?php echo base_url()?>kategori/laut">
           <i class="fas fa-fw fa-fish"></i>
           <span>IKAN LAUT</span></a>
       </li>
 
       <!-- Nav Item - Tables -->
       <li class="nav-item">
-        <a class="nav-link" href="tables.html">
+        <a class="nav-link" href="<?php echo base_url()?>kategori/hias">
           <i class="fas fa-fw fa-fish"></i>
           <span>IKAN HIAS</span></a>
       </li>
 
       <!-- Nav Item - Tables -->
       <li class="nav-item">
-        <a class="nav-link" href="tables.html">
+        <a class="nav-link" href="<?php echo base_url()?>kategori/tawar">
           <i class="fas fa-fw fa-fish"></i>
           <span>IKAN TAMBAK</span></a>
       </li>
