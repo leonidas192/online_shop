@@ -3,15 +3,20 @@
 defined('BASEPATH') OR exit('No direct script access allowed');
         
 class Dashboard extends CI_Controller {
+        public function __construct(){
+                parent::__construct();
+                if($this->session->userdata('hak_akses') != 2){
+                    $this->session->set_flashdata('pesan','<div class="alert alert-danger alert-dismissible fade show" role="alert">
+                    Anda Belum Login!!
+                   <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+                     <span aria-hidden="true">&times;</span>
+                   </button>
+                 </div>');
+                 redirect('auth/login');
+                }
+            }
 
-public function index()
-{
-        $data['barang'] = $this->Model_barang->tampil_data()->result();
-        $this->load->view('template/header');
-        $this->load->view('template/sidebar');
-        $this->load->view('dashboard',$data);               
-        $this->load->view('template/footer');
-}
+
 public function tambah_ke_keranjang($id)
 {
         $barang = $this->Model_barang->find($id);
@@ -22,7 +27,7 @@ public function tambah_ke_keranjang($id)
                 'name' => $barang->nama_barang
         );
         $this->cart->insert($data);
-        redirect('dashboard');
+        redirect('Welcome');
 }
 public function detail_keranjang()
 {
@@ -34,7 +39,7 @@ public function detail_keranjang()
 public function hapus_keranjang()
 {
         $this->cart->destroy();
-        redirect('Dashboard/index');
+        redirect('Welcome/index');
 }
 public function pembayaran()
 {

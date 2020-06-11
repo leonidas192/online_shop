@@ -3,9 +3,9 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Waktu pembuatan: 02 Jun 2020 pada 08.55
+-- Waktu pembuatan: 11 Jun 2020 pada 18.43
 -- Versi server: 10.4.11-MariaDB
--- Versi PHP: 7.4.6
+-- Versi PHP: 7.2.31
 
 SET SQL_MODE = "NO_AUTO_VALUE_ON_ZERO";
 START TRANSACTION;
@@ -42,11 +42,12 @@ CREATE TABLE `tabel_barang` (
 --
 
 INSERT INTO `tabel_barang` (`id`, `nama_barang`, `keterangan`, `kategori`, `harga`, `stock`, `gambar`) VALUES
-(1, 'Ikan Lele', 'Ikan Lele merupakan ikan air tawar', 'Ikan Tawar', '25000', 25, 'lele.jpg'),
-(3, 'Ikan Gurame', 'Ikan Gurame merupakan air tawar', 'Ikan Tawar', '30000', 15, 'gurame.jpg'),
-(4, 'Ikan Nila', 'Ikan Nila merupakan Air Tawar', 'Ikan Tawar', '35000', 10, 'nila.jpeg'),
-(5, 'Ikan Tongkol', 'Ikan Tongkol merupakan ikan laut', 'Ikan Laut', '20000', 35, 'tongkol.jpg'),
-(6, 'Ikan Tuna', 'Ikan Tuna merupakan ikan laut', 'Ikan Laut', '40000', 9, 'tuna.jpg');
+(1, 'Ikan Lele', 'Ikan Lele merupakan ikan air tawar', 'Ikan Tawar', '25000', 24, 'lele.jpg'),
+(2, 'Ikan Gurame', 'Ikan Gurame merupakan air tawar', 'Ikan Tawar', '30000', 14, 'gurame.jpg'),
+(3, 'Ikan Nila', 'Ikan Nila merupakan Air Tawar', 'Ikan Tawar', '35000', 9, 'nila.jpeg'),
+(4, 'Ikan Tongkol', 'Ikan Tongkol merupakan ikan laut', 'Ikan Laut', '20000', 34, 'tongkol.jpg'),
+(5, 'Ikan Tuna', 'Ikan Tuna merupakan ikan laut', 'Ikan Laut', '42000', 8, 'tuna.jpg'),
+(7, 'Ikan Arwana', 'Ikan Arwana merupakan Ikan hias', 'Ikan Hias', '50000', 4, 'arwana.jpg');
 
 --
 -- Indexes for dumped tables
@@ -66,7 +67,7 @@ ALTER TABLE `tabel_barang`
 -- AUTO_INCREMENT untuk tabel `tabel_barang`
 --
 ALTER TABLE `tabel_barang`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=7;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=8;
 COMMIT;
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
