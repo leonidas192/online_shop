@@ -28,6 +28,10 @@ public function hias()
    $this->load->view('hias',$data);
    $this->load->view('template/footer');
 }
+
+
+
+
         
 }
         
