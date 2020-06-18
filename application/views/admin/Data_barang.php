@@ -79,6 +79,30 @@
                     <input type="file" name="gambar" class="form-control">
                 </div>
 
+                <div class="form-grup">
+                    <label>Wilayah Persebaran</label>
+                    <input type="text" name="wilayah" class="form-control">
+                </div>
+
+                <div class="form-grup">
+                    <label>Manfaat</label>
+                    <textarea name="manfaat" cols="30" rows="10" class="form-control"></textarea>
+                </div>
+
+                <div class="form-grup">
+                    <label>Makanan</label>
+                    <textarea name="makanan" cols="30" rows="10" class="form-control"></textarea>
+                </div>
+
+                <div class="form-grup">
+                    <label>Masa Hidup</label>
+                    <textarea name="hidup" cols="30" rows="10" class="form-control"></textarea>
+                </div>
+
+                <div class="form-grup">
+                    <label>Masa Kawin</label>
+                    <textarea name="kawin" cols="30" rows="10" class="form-control"></textarea>
+                </div>
         
       </div>
       <div class="modal-footer">

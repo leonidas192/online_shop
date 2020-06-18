@@ -41,3 +41,42 @@
         <?php endforeach; ?>
     </div>
 </div>
+
+<div class="container-fluid">
+    <div class="card">
+    <h5 class="card-header">Keterangan Detail</h5>
+        <div class="card-body">
+
+        <?php foreach($barang as $brg) : ?>
+            <div class="row">
+            <div class="col-md-8"> 
+                <table class="table">
+                    <tr>
+                        <td>Wilayah Persebaran</td>
+                        <td><?php echo $brg->wilayah ?></td>
+                    </tr>
+                    <tr>
+                        <td>Manfaat</td>
+                        <td><?php echo $brg->manfaat ?></td>
+                    </tr>
+                    <tr>
+                        <td>Jenis Makanan</td>
+                        <td><?php echo $brg->makanan ?></td>
+                    </tr>
+                    <tr>
+                        <td>Masa Hidup</td>
+                        <td><?php echo $brg->hidup ?></td>
+                    </tr>
+                    <tr>
+                        <td>Masa Kawin</td>
+                        <td><?php echo $brg->kawin ?></td>
+                    </tr>
+                    
+                </table>
+    
+           </div>
+          </div>
+        </div>
+        <?php endforeach; ?>
+    </div>
+</div>

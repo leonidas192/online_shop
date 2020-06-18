@@ -28,7 +28,7 @@
     </table>
         <div align="right">
             <a href="<?php echo base_url('dashboard/hapus_keranjang')?>"><div class="btn btn-danger">Hapus Keranjang</div></a>
-            <a href="<?php echo base_url('dashboard/index')?>"><div class="btn btn-primary">Lanjutkan Belanja</div></a>
+            <a href="<?php echo base_url()?>"><div class="btn btn-primary">Lanjutkan Belanja</div></a>
             <a href="<?php echo base_url('dashboard/pembayaran')?>"><div class="btn btn-success">Pembayaran</div></a>
         </div>
 </div>

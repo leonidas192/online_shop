@@ -30,6 +30,11 @@ public function tambah_aksi()
     $kategori = $this->input->post('kategori');
     $harga = $this->input->post('harga');
     $stock = $this->input->post('stock');
+    $wilayah = $this->input->post('wilayah');
+    $manfaat = $this->input->post('manfaat');
+    $makanan = $this->input->post('makanan');
+    $hidup = $this->input->post('hidup');
+    $kawin = $this->input->post('kawin');
     $gambar = $_FILES['gambar']['name'];
     if($gambar = ''){}else{
         $config['upload_path'] = './assets/img';
@@ -42,6 +47,7 @@ public function tambah_aksi()
             $gambar = $this->upload->data('file_name');
         }
     }
+    
 
     $data = array(
             'nama_barang' => $nama_barang,
@@ -49,13 +55,17 @@ public function tambah_aksi()
             'kategori' => $kategori, 
             'harga' => $harga,
             'stock' => $stock,
-            'gambar' => $gambar
+            'gambar' => $gambar,
+            'wilayah' => $wilayah,
+            'manfaat' => $manfaat,
+            'makanan' => $makanan,
+            'hidup' => $hidup,
+            'kawin' => $kawin
+
     );
     
     $this->Model_barang->tambah_barang($data,'tabel_barang');
     redirect('admin/Data_barang/index');
-    
-
 }
 public function edit($id)
 {
@@ -74,13 +84,23 @@ public function update()
     $kategori = $this->input->post('kategori');
     $harga = $this->input->post('harga');
     $stock = $this->input->post('stock');
+    $wilayah = $this->input->post('wilayah');
+    $manfaat = $this->input->post('manfaat');
+    $makanan = $this->input->post('makanan');
+    $hidup = $this->input->post('hidup');
+    $kawin = $this->input->post('kawin');
 
     $data = array(
         'nama_barang' => $nama_barang,
         'keterangan' => $keterangan,
         'kategori' => $kategori,
         'harga' => $harga,
-        'stock' => $stock 
+        'stock' => $stock,
+        'wilayah' => $wilayah,
+        'manfaat' => $manfaat,
+        'makanan' => $makanan,
+        'hidup' => $hidup,
+        'kawin' => $kawin
     );
     $where = array(
         'id' => $id

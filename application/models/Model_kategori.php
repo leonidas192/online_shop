@@ -14,7 +14,6 @@ public function data_tawar(){
 }                       
 public function data_hias(){
     return $this->db->get_where('tabel_barang',array('kategori' => 'Ikan Hias'));
-    
 }                                    
                         
 }
