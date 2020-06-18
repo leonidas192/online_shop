@@ -62,7 +62,7 @@
       </li>
 
       <li class="nav-item">
-        <a class="nav-link" href="tables.html">
+      <a class="nav-link" href="<?php echo base_url()?>index_qna">
         <i class="fas fa-question"></i>
           <span>Q&A</span></a>
       </li>
