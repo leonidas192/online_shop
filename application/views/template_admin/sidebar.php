@@ -51,7 +51,7 @@
 
     <!-- Nav Item - Tables -->
       <li class="nav-item">
-        <a class="nav-link" href="<?php echo base_url('admin/resep')?>">
+        <a class="nav-link" href="<?php echo base_url('admin/data_masakan')?>">
         <i class="fas fa-utensils"></i>
           <span>RESEP MASAKAN</span></a>
       </li>

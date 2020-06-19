@@ -1,5 +1,5 @@
 <div class="container fluid">
-    <h3><i class = "fas fa-edit"></i>EDIT DATA BARANG</h3>
+    <h3><i class = "fas fa-edit"></i>EDIT DATA PERTANYAAN</h3>
     <?php foreach($pertanyaan as $i) : ?>
         <form action="<?php echo base_url().'admin/Data_pertanyaan/update'?>" method="post">
             <div class="for-group">

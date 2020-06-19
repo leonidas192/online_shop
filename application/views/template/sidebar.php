@@ -56,7 +56,7 @@
 
         <!-- Nav Item - Tables -->
       <li class="nav-item">
-        <a class="nav-link" href="tables.html">
+        <a class="nav-link" href="<?php echo base_url()?>Dashboard/masakan">
         <i class="fas fa-utensils"></i>
           <span>RESEP MASAKAN</span></a>
       </li>

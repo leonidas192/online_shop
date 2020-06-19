@@ -70,7 +70,23 @@ public function detail($id)
         $this->load->view('detail_barang',$data);               
         $this->load->view('template/footer');  
 }
+public function masakan()
+{
+        $data['masakan'] = $this->Model_masakan->tampil_masakan()->result();
+        $this->load->view('template/header');
+        $this->load->view('template/sidebar');
+        $this->load->view('masakan',$data);               
+        $this->load->view('template/footer');
+}
 
+public function detail_masakan($id)
+{
+        $data['masakan'] = $this->Model_masakan->detail_masakan($id);
+        $this->load->view('template/header');
+        $this->load->view('template/sidebar');
+        $this->load->view('detail_masakan',$data);               
+        $this->load->view('template/footer');
+}
         
 }
         
