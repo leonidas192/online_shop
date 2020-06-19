@@ -23,7 +23,7 @@
                       <?php echo form_error('username','<div class = "text-danger small">','</div>'); ?>
                     </div>
                     <div class="form-group">
-                      <input type="text" class="form-control form-control-user" id="exampleInputPassword" placeholder="Password" name="password">
+                      <input type="password" class="form-control form-control-user" id="exampleInputPassword" placeholder="Password" name="password">
                       <?php echo form_error('password','<div class = "text-danger small">','</div>'); ?>
                 </div>   
                     <button type="submit" class="btn btn-primary form-control">Login</button>

@@ -27,7 +27,7 @@ public function index()
             'id' => '',
             'nama' => $this->input->post('nama'),
             'username' => $this->input->post('username'),
-            'password' => $this->input->post('password_1'),
+            'password' => md5($this->input->post('password_1')),
             'hak_akses' => 2,
         );
         $this->db->insert('tabel_user',$data);
