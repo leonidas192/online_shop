@@ -43,7 +43,7 @@
         </button>
       </div>
       <div class="modal-body">
-        <form action="<?php echo base_url().'admin/Data_barang/tambah_aksi';?>"method="post" enctype="multipart/form-data">
+        <?php echo form_open_multipart('admin/Data_barang/tambah_aksi'); ?>
 
                 <div class="form-grup">
                     <label>Nama Barang</label>
@@ -75,11 +75,6 @@
                 </div>
 
                 <div class="form-grup">
-                    <label>Gambar</label>
-                    <input type="file" name="gambar" class="form-control">
-                </div>
-
-                <div class="form-grup">
                     <label>Wilayah Persebaran</label>
                     <input type="text" name="wilayah" class="form-control">
                 </div>
@@ -100,8 +95,13 @@
                 </div>
 
                 <div class="form-grup">
-                    <label>Masa Kawin</label>
-                    <textarea name="kawin" cols="30" rows="10" class="form-control"></textarea>
+                    <label>Kandungan Gizi</label>
+                    <textarea name="gizi" cols="30" rows="10" class="form-control"></textarea>
+                </div>
+
+                <div class="form-grup">
+                    <label>Gambar</label>
+                    <input type="file" name="gambar" class="form-control">
                 </div>
         
       </div>
@@ -109,7 +109,7 @@
         <button type="button" class="btn btn-danger" data-dismiss="modal">Close</button>
         <button type="submit" class="btn btn-primary">Save changes</button>
       </div>
-      </form>         
+      <?php echo form_close(); ?>        
     </div>
   </div>
 </div>

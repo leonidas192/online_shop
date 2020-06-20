@@ -68,8 +68,8 @@
                         <td><?php echo $brg->hidup ?></td>
                     </tr>
                     <tr>
-                        <td>Masa Kawin</td>
-                        <td><?php echo $brg->kawin ?></td>
+                        <td>Kandungan Gizi</td>
+                        <td><?php echo $brg->gizi ?></td>
                     </tr>
                     
                 </table>

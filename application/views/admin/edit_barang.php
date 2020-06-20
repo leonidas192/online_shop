@@ -40,8 +40,8 @@
                 <input type="text" name="hidup" class="form-control" value="<?php echo $i->hidup ?>">
             </div>
             <div class="for-group">
-                <label>Masa Kawin</label>
-                <input type="text" name="kawin" class="form-control" value="<?php echo $i->kawin ?>">
+                <label>Kandungan Gizi</label>
+                <input type="text" name="gizi" class="form-control" value="<?php echo $i->gizi ?>">
             </div>
             <button type="submit" class="btn btn-primary btn-sm">SIMPAN</button>
 

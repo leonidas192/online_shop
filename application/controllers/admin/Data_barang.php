@@ -34,16 +34,15 @@ public function tambah_aksi()
     $manfaat = $this->input->post('manfaat');
     $makanan = $this->input->post('makanan');
     $hidup = $this->input->post('hidup');
-    $kawin = $this->input->post('kawin');
-    $gambar = $_FILES['gambar']['name'];
+    $gizi = $this->input->post('gizi');
+    $gambar = $_FILES['gambar'];
     if($gambar = ''){}else{
         $config['upload_path'] = './assets/img';
         $config['allowed_types'] = 'jpg|jpeg|png|gif';
-        $this->load->library('upload',$config);
+        $this->upload->initialize($config);
         if(!$this->upload->do_upload('gambar')){
-            echo "Gambar Gagal Di Upload!";
-        }
-        else{
+            echo "Upload Gagal";die();
+        }else{
             $gambar = $this->upload->data('file_name');
         }
     }
@@ -55,12 +54,12 @@ public function tambah_aksi()
             'kategori' => $kategori, 
             'harga' => $harga,
             'stock' => $stock,
-            'gambar' => $gambar,
             'wilayah' => $wilayah,
             'manfaat' => $manfaat,
             'makanan' => $makanan,
             'hidup' => $hidup,
-            'kawin' => $kawin
+            'gizi' => $gizi,
+            'gambar' => $gambar
 
     );
     
@@ -88,7 +87,7 @@ public function update()
     $manfaat = $this->input->post('manfaat');
     $makanan = $this->input->post('makanan');
     $hidup = $this->input->post('hidup');
-    $kawin = $this->input->post('kawin');
+    $gizi = $this->input->post('gizi');
 
     $data = array(
         'nama_barang' => $nama_barang,
@@ -100,7 +99,7 @@ public function update()
         'manfaat' => $manfaat,
         'makanan' => $makanan,
         'hidup' => $hidup,
-        'kawin' => $kawin
+        'gizi' => $gizi
     );
     $where = array(
         'id' => $id

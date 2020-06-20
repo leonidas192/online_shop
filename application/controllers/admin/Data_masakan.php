@@ -29,22 +29,23 @@ public function tambah_aksi()
     $nama = $this->input->post('nama');
     $bahan = $this->input->post('bahan');
     $langkah = $this->input->post('langkah');
-    $gambar = $_FILES['gambar']['name'];
+    $gambar = $_FILES['gambar'];
     if($gambar = ''){}else{
         $config['upload_path'] = './assets/img';
         $config['allowed_types'] = 'jpg|jpeg|png|gif';
-        $this->load->library('upload',$config);
+        $this->upload->initialize($config);
         if(!$this->upload->do_upload('gambar')){
-            echo "Gambar Gagal Di Upload!";
+            echo "Gambar Gagal Di Upload!";die();
         }
         else{
             $gambar = $this->upload->data('file_name');
         }
     }
     $data = array(
-        'masakan' => $masakan,
+        'nama' => $nama,
         'bahan' => $bahan,
-        'langkah' => $langkah
+        'langkah' => $langkah,
+        'gambar' => $gambar
     );
     $this->Model_masakan->tambah_masakan($data,'tabel_masakan');
     redirect('admin/Data_masakan/index');
@@ -83,6 +84,14 @@ public function hapus($id)
     $where = array('id' => $id);
     $this->Model_masakan->hapus_masakan($where,'tabel_masakan');
     redirect('admin/Data_masakan/index'); 
+}
+public function detail($id)
+{
+        $data['masakan'] = $this->Model_masakan->detail_masakan($id);
+        $this->load->view('template_admin/header');
+        $this->load->view('template_admin/sidebar');
+        $this->load->view('admin/detail_masakan',$data);        
+        $this->load->view('template_admin/footer');    
 }
         
 }

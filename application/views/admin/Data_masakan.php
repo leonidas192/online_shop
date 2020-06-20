@@ -19,6 +19,7 @@
                 <td><?php echo $i->nama ?></td>
                 <td><?php echo $i->bahan ?></td>
                 <td><?php echo $i->langkah ?></td>
+                <td><?php echo anchor('admin/Data_masakan/detail/'.$i->id,'<div class ="btn btn-success btn-sm"><i class ="fas fa-search-plus"></i></div>') ?></td>
                 <td><?php echo anchor('admin/Data_masakan/edit/'.$i->id,'<div class ="btn btn-primary btn-sm"><i class ="fas fa-edit"></i></div>') ?></td>
                 <td><?php echo anchor('admin/Data_masakan/hapus/'.$i->id,'<div class ="btn btn-danger btn-sm"><i class ="fas fa-trash"></i></div>') ?></td>
             </tr>
@@ -31,7 +32,7 @@
   <div class="modal-dialog modal-dialog-scrollable" role="document">
     <div class="modal-content">
       <div class="modal-header">
-        <h5 class="modal-title" id="exampleModalScrollableTitle">Info Q&A</h5>
+        <h5 class="modal-title" id="exampleModalScrollableTitle">Data Masakan</h5>
         <button type="button" class="close" data-dismiss="modal" aria-label="Close">
           <span aria-hidden="true">&times;</span>
         </button>
