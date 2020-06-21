@@ -20,10 +20,11 @@ class Welcome extends CI_Controller {
 	 */
 	public function index()
 {
-        $data['barang'] = $this->Model_barang->tampil_data()->result();
-        $this->load->view('template/header');
-        $this->load->view('template/sidebar');
-        $this->load->view('dashboard',$data);               
-        $this->load->view('template/footer');
+	$data['tipe'] = $this->Model_kategori->data_tipe()->result();
+	$this->load->view('template/header');
+	$this->load->view('template/sidebar');
+	$this->load->view('dashboard',$data);
+	$this->load->view('template/footer');
 }
+
 }

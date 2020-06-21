@@ -38,7 +38,7 @@
                     </tr>
                     
                 </table>
-    
+                <a href="<?php echo base_url('admin/Data_masakan/index')?>"><div class="btn btn-primary">Kembali</div></a>
            </div>
           </div>
         </div>

@@ -24,7 +24,8 @@ public function tampil_pertanyaan(){
   {
         $this->db->where($where);
         $this->db->delete($table);
-  }                      
+  }
+                     
                             
                         
 }

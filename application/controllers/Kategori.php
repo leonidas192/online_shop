@@ -29,8 +29,6 @@ public function hias()
    $this->load->view('template/footer');
 }
 
-
-
         
 }
         

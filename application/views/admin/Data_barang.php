@@ -76,7 +76,7 @@
 
                 <div class="form-grup">
                     <label>Wilayah Persebaran</label>
-                    <input type="text" name="wilayah" class="form-control">
+                    <textarea name="wilayah" cols="30" rows="10" class="form-control"></textarea>
                 </div>
 
                 <div class="form-grup">

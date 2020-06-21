@@ -12,6 +12,18 @@ class Pertanyaan extends CI_Controller {
             $this->load->view('pertanyaan',$data);               
             $this->load->view('template/footer');
     }
+    public function tambah_keluhan()
+    {
+            $email = $this->input->post('email');
+            $pertanyaan = $this->input->post('pertanyaan');
+            $data = array(
+            'email' => $email, 
+            'pertanyaan' => $pertanyaan
+    );
+    $this->Model_keluhan->tambah_keluhan($data,'tabel_keluhan');
+    redirect('Pertanyaan/index');   
+    }
+    
         
 }
         

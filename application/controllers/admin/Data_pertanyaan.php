@@ -68,6 +68,14 @@ public function hapus($id)
     $this->Model_pertanyaan->hapus_pertanyaan($where,'tabel_pertanyaan');
     redirect('admin/Data_pertanyaan/index'); 
 }
+public function tampil_keluhan()
+{
+        $data['keluhan'] = $this->Model_keluhan->tampil_keluhan()->result();
+        $this->load->view('template_admin/header');
+        $this->load->view('template_admin/sidebar');
+        $this->load->view('admin/Data_keluhan',$data);
+        $this->load->view('template_admin/footer');
+}
         
 }
         

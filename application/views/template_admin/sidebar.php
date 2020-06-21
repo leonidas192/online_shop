@@ -56,6 +56,13 @@
           <span>RESEP MASAKAN</span></a>
       </li>
 
+      <!-- Nav Item - Tables -->
+      <li class="nav-item">
+        <a class="nav-link" href="<?php echo base_url('admin/Data_pertanyaan/tampil_keluhan')?>">
+        <i class="fa fa-comments" aria-hidden="true"></i>
+          <span>KOMENTAR USER</span></a>
+      </li>
+
       <!-- Sidebar Toggler (Sidebar) -->
       <div class="text-center d-none d-md-inline">
         <button class="rounded-circle border-0" id="sidebarToggle"></button>

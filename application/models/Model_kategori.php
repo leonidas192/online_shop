@@ -15,6 +15,10 @@ public function data_tawar(){
 public function data_hias(){
     return $this->db->get_where('tabel_barang',array('kategori' => 'Ikan Hias'));
 }
+public function data_tipe()
+{
+    return $this->db->get_where('tabel_barang',array('tipe' => 'Populer Bulan Ini'));
+}
                                     
                    
 }
