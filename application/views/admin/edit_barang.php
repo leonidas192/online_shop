@@ -35,10 +35,13 @@
                 <label>Makanan</label>
                 <input type="text" name="makanan" class="form-control" value="<?php echo $i->makanan ?>">
             </div>
-            <div class="for-group">
-                <label>Masa Hidup</label>
-                <input type="text" name="hidup" class="form-control" value="<?php echo $i->hidup ?>">
-            </div>
+            <div class="form-grup">
+                    <label>Tipe Ikan</label>
+                    <select class="form-control" name="kategori">
+                      <option value="Populer Bulan Ini">Populer Bulan Ini</option>
+                      <option value="Normal">Normal</option>
+                    </select>
+                </div>
             <div class="for-group">
                 <label>Kandungan Gizi</label>
                 <input type="text" name="gizi" class="form-control" value="<?php echo $i->gizi ?>">

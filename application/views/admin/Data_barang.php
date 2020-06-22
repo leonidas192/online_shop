@@ -90,8 +90,11 @@
                 </div>
 
                 <div class="form-grup">
-                    <label>Masa Hidup</label>
-                    <textarea name="hidup" cols="30" rows="10" class="form-control"></textarea>
+                    <label>Tipe Ikan</label>
+                    <select class="form-control" name="kategori">
+                      <option value="Populer Bulan Ini">Populer Bulan Ini</option>
+                      <option value="Normal">Normal</option>
+                    </select>
                 </div>
 
                 <div class="form-grup">

@@ -21,8 +21,8 @@
         <span class="carousel-control-next-icon" aria-hidden="true"></span>
         <span class="sr-only">Next</span>
     </a>
-    </div>
-
+    </div><br><br>
+    <h4>Ikan Populer Bulan Ini</h4>
     <div class="row text-center mt-4">
 
         <?php foreach ($tipe as $i) : ?>

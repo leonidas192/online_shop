@@ -61,10 +61,6 @@
                         <td><?php echo $brg->makanan ?></td>
                     </tr>
                     <tr>
-                        <td>Masa Hidup</td>
-                        <td><?php echo $brg->hidup ?></td>
-                    </tr>
-                    <tr>
                         <td>Kandungan Gizi</td>
                         <td><?php echo $brg->gizi ?></td>
                     </tr>
