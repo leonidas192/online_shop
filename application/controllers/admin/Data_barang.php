@@ -33,7 +33,7 @@ public function tambah_aksi()
     $wilayah = $this->input->post('wilayah');
     $manfaat = $this->input->post('manfaat');
     $makanan = $this->input->post('makanan');
-    $hidup = $this->input->post('hidup');
+    $tipe = $this->input->post('tipe');
     $gizi = $this->input->post('gizi');
     $gambar = $_FILES['gambar'];
     if($gambar = ''){}else{
@@ -57,7 +57,7 @@ public function tambah_aksi()
             'wilayah' => $wilayah,
             'manfaat' => $manfaat,
             'makanan' => $makanan,
-            'hidup' => $hidup,
+            'tipe' => $tipe,
             'gizi' => $gizi,
             'gambar' => $gambar
 
@@ -86,7 +86,7 @@ public function update()
     $wilayah = $this->input->post('wilayah');
     $manfaat = $this->input->post('manfaat');
     $makanan = $this->input->post('makanan');
-    $hidup = $this->input->post('hidup');
+    $tipe = $this->input->post('tipe');
     $gizi = $this->input->post('gizi');
 
     $data = array(
@@ -98,7 +98,7 @@ public function update()
         'wilayah' => $wilayah,
         'manfaat' => $manfaat,
         'makanan' => $makanan,
-        'hidup' => $hidup,
+        'tipe' => $tipe,
         'gizi' => $gizi
     );
     $where = array(

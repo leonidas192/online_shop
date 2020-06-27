@@ -91,7 +91,7 @@
 
                 <div class="form-grup">
                     <label>Tipe Ikan</label>
-                    <select class="form-control" name="kategori">
+                    <select class="form-control" name="tipe">
                       <option value="Populer Bulan Ini">Populer Bulan Ini</option>
                       <option value="Normal">Normal</option>
                     </select>

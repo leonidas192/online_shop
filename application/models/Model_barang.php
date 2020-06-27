@@ -7,6 +7,11 @@ class Model_barang extends CI_Model {
 public function tampil_data(){
       return $this->db->get('tabel_barang');                          
 }
+public function getData_Khusus($tabel,$where)
+    {
+        $sarung = $this->db->get_where($tabel,$where);
+        return $sarung->result_array();
+    }
 public function tambah_barang($data,$table)
 {
       $this->db->insert($table,$data);
@@ -45,7 +50,8 @@ public function detail_barang($id)
             return false;
       }
 }
-                                                    
+
+
 }
                         
 /* End of file model_barang.php */

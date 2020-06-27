@@ -82,7 +82,8 @@
 
 <!-- Content Row -->
 </div>
-
+<div class="container-fluid">
+<div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
 <div class="row text-center mt-4">
 
         <?php foreach ($barang as $i) : ?>
@@ -100,3 +101,5 @@
     </div>
         <?php endforeach ?>
     </div>
+</div>
+</div>

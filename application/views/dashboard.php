@@ -9,7 +9,7 @@
         <img src="<?php echo base_url('assets/img/bg.jpg')?>" class="d-block w-100" alt="..." height="300" width ="200">
         </div>
         <div class="carousel-item">
-        <img src="<?php echo base_url('assets/img/bg1.jpg')?>" class="d-block w-100" alt="..." height="400" width ="200">
+        <img src="<?php echo base_url('assets/img/bg1.jpg')?>" class="d-block w-100" alt="..." height="300" width ="200">
         </div>
        
     </div>
