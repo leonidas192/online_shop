@@ -33,7 +33,7 @@
                     
                 </table>
                 <?php echo anchor('Dashboard/tambah_ke_keranjang/'.$brg->id,'<div class="btn btn-primary">Tambah Ke Keranjang</div>') ?>
-                <?php echo anchor('Dashboard/index/'.$brg->id,'<div class="btn btn-danger">Kembali</div>') ?>
+                <?php echo anchor('','<div class="btn btn-danger">Kembali</div>') ?>
            
            </div>
           </div>

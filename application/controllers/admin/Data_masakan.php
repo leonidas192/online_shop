@@ -96,6 +96,5 @@ public function detail($id)
         
 }
         
-    /* End of file  data_masakan.php */
         
                             

@@ -113,9 +113,9 @@
             <ul class="na navbar-nav navbar-right">
                     <?php if($this->session->userdata('username')) {?>
                     <li><div>Selamat Datang <?php echo $this->session->userdata('username')?></div></li>
-                    <li class="ml-2"><?php echo anchor('Auth/logout','Logout') ?></li>
+                    <li class="ml-2"><?php echo anchor('Auth/logout','<i class="fas fa-sign-out-alt"></i>') ?></li>
                   <?php }else{ ?>
-                    <li><?php echo anchor('Auth/login','Login'); ?></li>
+                    <li><?php echo anchor('Auth/login','<i class="fas fa-sign-in-alt"></i>'); ?></li>
                   <?php } ?>
                   </ul>
 
